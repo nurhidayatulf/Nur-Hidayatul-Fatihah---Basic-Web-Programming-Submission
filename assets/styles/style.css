@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+ }
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 30px;
+    padding: 30px 50px;
+    background-color: #A1DD70;
+    text-align: center;
+    color: black;
+    
+}
+
+div > img {
+    width: 45%;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+nav {
+    background-color: #1C7947;
+    padding: 3px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+    background-color: #FFFDDE;
+ }
+
+ .paragraph-box {
+    padding: 100px 40px;
+    font-size: 22px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(47, 51, 48, 0.2);
+    border-radius: 5px;
+    padding: 20px 40px;
+    margin-top: 20px; 
+    background-color: rgba(95, 202, 74, 0.322);
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.tampil {
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.team-section {
+    background-color: #FFFDDE;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .section-title {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.row .team-items {
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row .team-items .item {
+    flex-basis: calc(33% - 30px);
+    max-width: calc(33% - 30px);
+}
+
+.row .team-items .item img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.row .team-items .item .inner {
+    position: relative;
+    z-index: 9;
+}
+
+.row .team-items .item .inner .info {
+    text-align: center;
+    margin-top: 15px;
+}
+.row .team-items .item .inner .info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+
+footer {
+    padding: 20px;
+    color: black;
+    background-color: #A1DD70;
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+ }
+
+.aboutme {
+    width: 25%;
+    border-radius: 50%;
+}
+
+@media(max-width: 991px) {
+    .row .team-items .item {
+        flex-basis: calc(70% - 30px);
+        max-width: calc(70% - 30px);
+    }
+}
+
+@media(max-width: 767px) {
+    .row .team-items .item {
+        flex-basis: calc(100%);
+        max-width: calc(100%);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
